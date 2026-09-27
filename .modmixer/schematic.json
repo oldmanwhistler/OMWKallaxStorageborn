@@ -1,0 +1,4 @@
+{
+  "shortDescription": "Adds a selectable Kallax cosmetic body to OMW Storageborn Xenotype and makes Storageborn generation use only this pack's enabled Kallax pool when loaded.",
+  "body": "## Kallax cosmetic body\n\nRequires OMW Storageborn Xenotype. Adds an IKEA/Kallax cosmetic body gene and uses the existing Kallax body texture ported into this pack.\n\n## Settings\n\nProvides a settings menu with a Kallax enable/disable option. Disabling Kallax fully removes it from this pack's generation pool; if it is the only enabled option, no new Storageborn body is selected rather than falling back to another pool.\n\n## Spawn-pool override\n\nWhen this pack is loaded, Storageborn body randomization is Harmony-patched so Storageborn pawns select only from this pack's enabled Kallax pool. The patch is guarded for the base mod and does not alter unrelated xenotypes."
+}

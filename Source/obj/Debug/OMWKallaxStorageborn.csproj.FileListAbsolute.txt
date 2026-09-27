@@ -1,0 +1,9 @@
+C:\Users\Jason.2020.11\AppData\Roaming\Modmixer\workspace\Mods\5b1304c4304d\Assemblies\OMWKallaxStorageborn.dll
+C:\Users\Jason.2020.11\AppData\Roaming\Modmixer\workspace\Mods\5b1304c4304d\Assemblies\OMWKallaxStorageborn.pdb
+C:\Users\Jason.2020.11\AppData\Roaming\Modmixer\workspace\Mods\5b1304c4304d\Source\obj\Debug\OMWKallaxStorageborn.csproj.AssemblyReference.cache
+C:\Users\Jason.2020.11\AppData\Roaming\Modmixer\workspace\Mods\5b1304c4304d\Source\obj\Debug\OMWKallaxStorageborn.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jason.2020.11\AppData\Roaming\Modmixer\workspace\Mods\5b1304c4304d\Source\obj\Debug\OMWKallaxStorageborn.AssemblyInfoInputs.cache
+C:\Users\Jason.2020.11\AppData\Roaming\Modmixer\workspace\Mods\5b1304c4304d\Source\obj\Debug\OMWKallaxStorageborn.AssemblyInfo.cs
+C:\Users\Jason.2020.11\AppData\Roaming\Modmixer\workspace\Mods\5b1304c4304d\Source\obj\Debug\OMWKallaxStorageborn.csproj.CoreCompileInputs.cache
+C:\Users\Jason.2020.11\AppData\Roaming\Modmixer\workspace\Mods\5b1304c4304d\Source\obj\Debug\OMWKallaxStorageborn.dll
+C:\Users\Jason.2020.11\AppData\Roaming\Modmixer\workspace\Mods\5b1304c4304d\Source\obj\Debug\OMWKallaxStorageborn.pdb

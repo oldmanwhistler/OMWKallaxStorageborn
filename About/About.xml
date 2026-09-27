@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ModMetaData>
+  <name>OMW Kallax Storageborn</name>
+  <packageId>oldmanwhistler.OMWKallaxStorageborn</packageId>
+  <author>oldmanwhistler</author>
+  <description>Adds a Kallax cosmetic body to OMW Storageborn Xenotype with settings to enable or disable it.</description>
+  <supportedVersions>
+    <li>1.6</li>
+  </supportedVersions>
+  <modDependencies>
+    <li>
+      <packageId>oldmanwhistler.StoragebornXenotype</packageId>
+      <displayName>OMW Storageborn Xenotype</displayName>
+    </li>
+    <li>
+      <packageId>brrainz.harmony</packageId>
+      <displayName>Harmony</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>oldmanwhistler.StoragebornXenotype</li>
+    <li>brrainz.harmony</li>
+  </loadAfter>
+</ModMetaData>
