@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <StoragebornXenotype.StoragebornCategoryDef>
+    <defName>OMW_StoragebornCategory_MedievalIkea</defName>
+    <label>Medieval Ikea</label>
+    <worldTechLevel>Medieval</worldTechLevel>
+  </StoragebornXenotype.StoragebornCategoryDef>
+
+  <StoragebornXenotype.StoragebornCategoryDef>
+    <defName>OMW_StoragebornCategory_IndustrialIkea</defName>
+    <label>Industrial Ikea</label>
+    <worldTechLevel>Industrial</worldTechLevel>
+  </StoragebornXenotype.StoragebornCategoryDef>
+</Defs>

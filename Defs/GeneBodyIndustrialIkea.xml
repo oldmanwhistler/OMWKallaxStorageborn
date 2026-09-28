@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <GeneDef ParentName="OMW_StorageBodyBase">
+    <defName>OMW_BlahajStoragebornBody</defName>
+    <label>SB Blahaj</label>
+    <labelShortAdj>Blahaj</labelShortAdj>
+    <description></description>
+    <iconPath>Storageborn/Bodies/Blahaj/Storageborn_south</iconPath>
+    <exclusionTags />
+    <modExtensions>
+      <li Class="StoragebornXenotype.StoragebornBodyCategoryExtension">
+        <OMW_StoragebornCategory>OMW_StoragebornCategory_IndustrialIkea</OMW_StoragebornCategory>
+      </li>
+      <li Class="StoragebornXenotype.StoragebornBodyBackstoriesExtension">
+        <backgrounds>
+          <li>OMW_StoragebornChildhood_IndustrialFurniture</li>
+        </backgrounds>
+      </li>
+      <li Class="StoragebornXenotype.StoragebornBodyGenesExtension">
+        <genes>
+        <li>PsychicAbility_Deaf</li>
+        <li>Neversleep</li>     
+        <li>VU_NoBlood</li>
+        <li>FireWeakness</li>
+        <li>FireTerror</li>    
+        <li>WoundHealing_Fast</li>        
+        <li>Immunity_Strong</li>             
+        <li MayRequire="sarg.alphagenes">AG_WoodLeather</li>
+        <li MayRequire="sarg.alphagenes">AG_NoMeat</li>                 
+        </genes>
+      </li>    
+      <li Class="BigAndSmall.PawnExtension">
+        <disableFacialAnimations>true</disableFacialAnimations>
+        <bodyPaths>
+          <Body_Female>Storageborn/Bodies/Blahaj/Storageborn</Body_Female>
+          <Body_Male>Storageborn/Bodies/Blahaj/Storageborn</Body_Male>
+          <Body_Thin>Storageborn/Bodies/Blahaj/Storageborn</Body_Thin>
+          <Body_Fat>Storageborn/Bodies/Blahaj/Storageborn</Body_Fat>
+          <Body_Hulk>Storageborn/Bodies/Blahaj/Storageborn</Body_Hulk>
+        </bodyPaths>
+      </li>
+    </modExtensions>
+  </GeneDef>
+
+    <GeneDef ParentName="OMW_StorageBodyBase">
+    <defName>OMW_FraktaStoragebornBody</defName>
+    <label>SB Frakta</label>
+    <labelShortAdj>Frakta</labelShortAdj>
+    <description></description>
+    <iconPath>Storageborn/Bodies/Frakta/Storageborn_south</iconPath>
+    <exclusionTags />
+    <modExtensions>
+      <li Class="StoragebornXenotype.StoragebornBodyCategoryExtension">
+        <OMW_StoragebornCategory>OMW_StoragebornCategory_IndustrialIkea</OMW_StoragebornCategory>
+      </li>
+      <li Class="StoragebornXenotype.StoragebornBodyBackstoriesExtension">
+        <backgrounds>
+          <li>OMW_StoragebornChildhood_IndustrialFurniture</li>
+        </backgrounds>
+      </li>
+      <li Class="StoragebornXenotype.StoragebornBodyGenesExtension">
+        <genes>
+        <li>PsychicAbility_Deaf</li>
+        <li>Neversleep</li>     
+        <li>VU_NoBlood</li>
+        <li>FireWeakness</li>
+        <li>FireTerror</li>    
+        <li>WoundHealing_Fast</li>        
+        <li>Immunity_Strong</li>             
+        <li MayRequire="sarg.alphagenes">AG_WoodLeather</li>
+        <li MayRequire="sarg.alphagenes">AG_NoMeat</li>                 
+        </genes>
+      </li>    
+      <li Class="BigAndSmall.PawnExtension">
+        <disableFacialAnimations>true</disableFacialAnimations>
+        <bodyPaths>
+          <Body_Female>Storageborn/Bodies/Frakta/Storageborn</Body_Female>
+          <Body_Male>Storageborn/Bodies/Frakta/Storageborn</Body_Male>
+          <Body_Thin>Storageborn/Bodies/Frakta/Storageborn</Body_Thin>
+          <Body_Fat>Storageborn/Bodies/Frakta/Storageborn</Body_Fat>
+          <Body_Hulk>Storageborn/Bodies/Frakta/Storageborn</Body_Hulk>
+        </bodyPaths>
+      </li>
+    </modExtensions>
+  </GeneDef>
+
+  <GeneDef ParentName="OMW_StorageBodyBase">
+    <defName>OMW_FraktaRainbowStoragebornBody</defName>
+    <label>SB FraktaRainbow</label>
+    <labelShortAdj>FraktaRainbow</labelShortAdj>
+    <description></description>
+    <iconPath>Storageborn/Bodies/FraktaRainbow/Storageborn_south</iconPath>
+    <exclusionTags />
+    <modExtensions>
+      <li Class="StoragebornXenotype.StoragebornBodyCategoryExtension">
+        <OMW_StoragebornCategory>OMW_StoragebornCategory_IndustrialIkea</OMW_StoragebornCategory>
+      </li>
+      <li Class="StoragebornXenotype.StoragebornBodyBackstoriesExtension">
+        <backgrounds>
+          <li>OMW_StoragebornChildhood_IndustrialFurniture</li>
+        </backgrounds>
+      </li>
+      <li Class="StoragebornXenotype.StoragebornBodyGenesExtension">
+        <genes>
+        <li>PsychicAbility_Deaf</li>
+        <li>Neversleep</li>     
+        <li>VU_NoBlood</li>
+        <li>FireWeakness</li>
+        <li>FireTerror</li>    
+        <li>WoundHealing_Fast</li>        
+        <li>Immunity_Strong</li>             
+        <li MayRequire="sarg.alphagenes">AG_WoodLeather</li>
+        <li MayRequire="sarg.alphagenes">AG_NoMeat</li>                 
+        </genes>
+      </li>    
+      <li Class="BigAndSmall.PawnExtension">
+        <disableFacialAnimations>true</disableFacialAnimations>
+        <bodyPaths>
+          <Body_Female>Storageborn/Bodies/FraktaRainbow/Storageborn</Body_Female>
+          <Body_Male>Storageborn/Bodies/FraktaRainbow/Storageborn</Body_Male>
+          <Body_Thin>Storageborn/Bodies/FraktaRainbow/Storageborn</Body_Thin>
+          <Body_Fat>Storageborn/Bodies/FraktaRainbow/Storageborn</Body_Fat>
+          <Body_Hulk>Storageborn/Bodies/FraktaRainbow/Storageborn</Body_Hulk>
+        </bodyPaths>
+      </li>
+    </modExtensions>
+  </GeneDef>  
+</Defs>

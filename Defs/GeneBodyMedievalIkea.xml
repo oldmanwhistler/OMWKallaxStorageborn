@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <GeneDef ParentName="OMW_StorageBodyBase">
+    <defName>OMW_KallaxStoragebornBody</defName>
+    <label>SB Kallax</label>
+    <labelShortAdj>Kallax</labelShortAdj>
+    <description></description>
+    <iconPath>Storageborn/Bodies/Kallax/Storageborn_south</iconPath>
+    <exclusionTags />
+    <modExtensions>
+      <li Class="StoragebornXenotype.StoragebornBodyCategoryExtension">
+        <OMW_StoragebornCategory>OMW_StoragebornCategory_MedievalIkea</OMW_StoragebornCategory>
+      </li>
+      <li Class="StoragebornXenotype.StoragebornBodyBackstoriesExtension">
+        <backgrounds>
+          <li>OMW_StoragebornChildhood_MedievalFurniture</li>
+        </backgrounds>
+      </li>
+      <li Class="StoragebornXenotype.StoragebornBodyGenesExtension">
+        <genes>
+        <li>PsychicAbility_Deaf</li>
+        <li>Neversleep</li>     
+        <li>VU_NoBlood</li>
+        <li>FireWeakness</li>
+        <li>FireTerror</li>    
+        <li>WoundHealing_Fast</li>        
+        <li>Immunity_Strong</li>             
+        <li MayRequire="sarg.alphagenes">AG_WoodLeather</li>
+        <li MayRequire="sarg.alphagenes">AG_NoMeat</li>                 
+        </genes>
+      </li>    
+      <li Class="BigAndSmall.PawnExtension">
+        <disableFacialAnimations>true</disableFacialAnimations>
+        <bodyPaths>
+          <Body_Female>Storageborn/Bodies/Kallax/Storageborn</Body_Female>
+          <Body_Male>Storageborn/Bodies/Kallax/Storageborn</Body_Male>
+          <Body_Thin>Storageborn/Bodies/Kallax/Storageborn</Body_Thin>
+          <Body_Fat>Storageborn/Bodies/Kallax/Storageborn</Body_Fat>
+          <Body_Hulk>Storageborn/Bodies/Kallax/Storageborn</Body_Hulk>
+        </bodyPaths>
+      </li>
+    </modExtensions>
+  </GeneDef>
+
+    <GeneDef ParentName="OMW_StorageBodyBase">
+    <defName>OMW_BillyStoragebornBody</defName>
+    <label>SB Billy</label>
+    <labelShortAdj>Billy</labelShortAdj>
+    <description></description>
+    <iconPath>Storageborn/Bodies/Billy/Storageborn_south</iconPath>
+    <exclusionTags />
+    <modExtensions>
+      <li Class="StoragebornXenotype.StoragebornBodyCategoryExtension">
+        <OMW_StoragebornCategory>OMW_StoragebornCategory_MedievalIkea</OMW_StoragebornCategory>
+      </li>
+      <li Class="StoragebornXenotype.StoragebornBodyBackstoriesExtension">
+        <backgrounds>
+          <li>OMW_StoragebornChildhood_MedievalFurniture</li>
+        </backgrounds>
+      </li>
+      <li Class="StoragebornXenotype.StoragebornBodyGenesExtension">
+        <genes>
+        <li>PsychicAbility_Deaf</li>
+        <li>Neversleep</li>     
+        <li>VU_NoBlood</li>
+        <li>FireWeakness</li>
+        <li>FireTerror</li>    
+        <li>WoundHealing_Fast</li>        
+        <li>Immunity_Strong</li>             
+        <li MayRequire="sarg.alphagenes">AG_WoodLeather</li>
+        <li MayRequire="sarg.alphagenes">AG_NoMeat</li>                 
+        </genes>
+      </li>    
+      <li Class="BigAndSmall.PawnExtension">
+        <disableFacialAnimations>true</disableFacialAnimations>
+        <bodyPaths>
+          <Body_Female>Storageborn/Bodies/Billy/Storageborn</Body_Female>
+          <Body_Male>Storageborn/Bodies/Billy/Storageborn</Body_Male>
+          <Body_Thin>Storageborn/Bodies/Billy/Storageborn</Body_Thin>
+          <Body_Fat>Storageborn/Bodies/Billy/Storageborn</Body_Fat>
+          <Body_Hulk>Storageborn/Bodies/Billy/Storageborn</Body_Hulk>
+        </bodyPaths>
+      </li>
+    </modExtensions>
+  </GeneDef>
+
+  <GeneDef ParentName="OMW_StorageBodyBase">
+    <defName>OMW_LackStoragebornBody</defName>
+    <label>SB Lack</label>
+    <labelShortAdj>Lack</labelShortAdj>
+    <description></description>
+    <iconPath>Storageborn/Bodies/Lack/Storageborn_south</iconPath>
+    <exclusionTags />
+    <modExtensions>
+      <li Class="StoragebornXenotype.StoragebornBodyCategoryExtension">
+        <OMW_StoragebornCategory>OMW_StoragebornCategory_MedievalIkea</OMW_StoragebornCategory>
+      </li>
+      <li Class="StoragebornXenotype.StoragebornBodyBackstoriesExtension">
+        <backgrounds>
+          <li>OMW_StoragebornChildhood_MedievalFurniture</li>
+        </backgrounds>
+      </li>
+      <li Class="StoragebornXenotype.StoragebornBodyGenesExtension">
+        <genes>
+        <li>PsychicAbility_Deaf</li>
+        <li>Neversleep</li>     
+        <li>VU_NoBlood</li>
+        <li>FireWeakness</li>
+        <li>FireTerror</li>    
+        <li>WoundHealing_Fast</li>        
+        <li>Immunity_Strong</li>             
+        <li MayRequire="sarg.alphagenes">AG_WoodLeather</li>
+        <li MayRequire="sarg.alphagenes">AG_NoMeat</li>                 
+        </genes>
+      </li>    
+      <li Class="BigAndSmall.PawnExtension">
+        <disableFacialAnimations>true</disableFacialAnimations>
+        <bodyPaths>
+          <Body_Female>Storageborn/Bodies/Lack/Storageborn</Body_Female>
+          <Body_Male>Storageborn/Bodies/Lack/Storageborn</Body_Male>
+          <Body_Thin>Storageborn/Bodies/Lack/Storageborn</Body_Thin>
+          <Body_Fat>Storageborn/Bodies/Lack/Storageborn</Body_Fat>
+          <Body_Hulk>Storageborn/Bodies/Lack/Storageborn</Body_Hulk>
+        </bodyPaths>
+      </li>
+    </modExtensions>
+  </GeneDef>  
+</Defs>
