@@ -75,10 +75,10 @@
         <li>AptitudeTerrible_Cooking</li>   
         <li>AptitudeStrong_Plants</li>             
         <li>Neversleep</li>     
-        <li>VU_NoBlood</li> 
-        <li>WoundHealing_Fast</li>        
+        <li>VU_NoBlood</li>     
         <li>Immunity_Strong</li>    
-        <li>BS_SnekEngulf</li>                 
+        <li>BS_SnekEngulf</li>     
+        <li>BS_FoamSpray</li>                    
         <li MayRequire="sarg.alphagenes">AG_NoMeat</li>                 
         </genes>
       </li>    
@@ -121,15 +121,14 @@
       </li>
       <li Class="StoragebornXenotype.StoragebornBodyGenesExtension">
         <genes>
-        <li>AptitudeRemarkable_Artistic</li>
+        <li>AptitudePoor_Melee</li>        
+        <li>AptitudePoor_Construction</li>        
+        <li>AptitudeStrong_Artistic</li>
         <li>AptitudeTerrible_Medicine</li>
         <li>AptitudeRemarkable_Social</li>        
         <li>Beauty_Beautiful</li>        
         <li>Neversleep</li>     
-        <li>VU_NoBlood</li>
-        <li>WoundHealing_Fast</li>        
-        <li>Immunity_Strong</li>             
-        <li>BS_SnekEngulf</li>
+        <li>VU_NoBlood</li>               
         <li MayRequire="sarg.alphagenes">AG_NoMeat</li>                 
         </genes>
       </li>    

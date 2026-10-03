@@ -19,6 +19,8 @@
       <li Class="StoragebornXenotype.StoragebornBodyGenesExtension">
         <genes>
         <li>AptitudeRemarkable_Melee</li>
+        <li>AptitudeStrong_Construction</li>
+        <li>AptitudeStrong_Mining</li>
         <li>AptitudePoor_Social</li>
         <li>AptitudePoor_Intellectual</li>                        
         <li>PsychicAbility_Deaf</li>
@@ -66,13 +68,15 @@
       </li>
       <li Class="StoragebornXenotype.StoragebornBodyGenesExtension">
         <genes>
-        <li>AptitudeTerrible_Animals</li>
+        <li>AptitudePoor_Melee</li>        
+        <li>AptitudePoor_Animals</li>
+        <li>AptitudePoor_Social</li>
         <li>AptitudeRemarkable_Intellectual</li>
-        <li>PsychicAbility_Extreme</li>
         <li>Neversleep</li>     
         <li>VU_NoBlood</li>
         <li>FireWeakness</li>
         <li>FireTerror</li>    
+        <li>PsychicAbility_Enhanced</li>      
         <li>WoundHealing_Fast</li>        
         <li>Immunity_Strong</li>             
         <li>BS_Very_Passioned_Learning_Gene</li>
@@ -112,16 +116,18 @@
       </li>
       <li Class="StoragebornXenotype.StoragebornBodyGenesExtension">
         <genes>
+        <li>AptitudeStrong_Shooting</li>
         <li>AptitudeTerrible_Construction</li>
         <li>AptitudeRemarkable_Plants</li>
         <li>BS_Diet_Herbivore</li>
+        <li>PsychicAbility_Enhanced</li>      
         <li>Beauty_VeryUgly</li>
         <li>Neversleep</li>     
         <li>VU_NoBlood</li>
         <li>FireWeakness</li>
         <li>FireTerror</li>    
         <li>WoundHealing_Fast</li>        
-        <li>Immunity_Strong</li>             
+        <li>Immunity_SuperStrong</li>             
         <li MayRequire="sarg.alphagenes">AG_LightSustenance</li>
         <li MayRequire="sarg.alphagenes">AG_WoodLeather</li>
         <li MayRequire="sarg.alphagenes">AG_NoMeat</li>                 
