@@ -91,6 +91,11 @@
     <description></description>
     <iconPath>Storageborn/Bodies/FraktaRainbow/Storageborn_south</iconPath>
     <exclusionTags />
+    <forcedTraits>
+    <li>
+      <def>Gay</def>
+    </li>
+    </forcedTraits>    
     <modExtensions>
       <li Class="StoragebornXenotype.StoragebornBodyCategoryExtension">
         <OMW_StoragebornCategory>OMW_StoragebornCategory_IndustrialIkea</OMW_StoragebornCategory>
