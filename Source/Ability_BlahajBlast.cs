@@ -36,18 +36,32 @@ namespace OMWKallaxStorageborn
             if (distance < 0.01f) return;
             Vector3 direction = delta / distance;
             Vector3 side = new Vector3(-direction.z, 0f, direction.x);
-            // Three aligned fleck ribbons create the requested nested white/pink/blue beam.
-            int segments = Mathf.Max(1, Mathf.CeilToInt(distance * 3f));
+            Color[] stripeColors =
+            {
+                new Color(0.333f, 0.804f, 0.988f),
+                new Color(0.969f, 0.659f, 0.722f),
+                Color.white,
+                Color.white,
+                Color.white,
+                new Color(0.969f, 0.659f, 0.722f),
+                new Color(0.333f, 0.804f, 0.988f)
+            };
+            const float stripeSpacing = 0.11f;
+            const float stripeWidth = 0.16f;
+            // Closely overlapping flecks make each colored ribbon read as a continuous beam.
+            int segments = Mathf.Max(1, Mathf.CeilToInt(distance * 8f));
             for (int i = 0; i <= segments; i++)
             {
-                Vector3 point = start + direction * (distance * i / segments);
-                ThrowBeamFleck(point, map, side, 0.42f, new Color(85f / 255f, 205f / 255f, 252f / 255f, 1f));
-                ThrowBeamFleck(point, map, side, 0.23f, new Color(247f / 255f, 168f / 255f, 184f / 255f, 1f));
-                ThrowBeamFleck(point, map, side, 0.08f, Color.white);
+                Vector3 beamPoint = start + direction * (distance * i / segments);
+                for (int stripe = 0; stripe < stripeColors.Length; stripe++)
+                {
+                    Vector3 point = beamPoint + side * ((stripe - 2) * stripeSpacing);
+                    ThrowBeamFleck(point, map, stripeWidth, stripeColors[stripe]);
+                }
             }
         }
 
-        private static void ThrowBeamFleck(Vector3 point, Map map, Vector3 side, float width, Color color)
+        private static void ThrowBeamFleck(Vector3 point, Map map, float width, Color color)
         {
             FleckDef beamFleck = DefDatabase<FleckDef>.GetNamed("OMW_BlahajBeamFleck");
             FleckCreationData data = FleckMaker.GetDataStatic(point, map, beamFleck, width);
