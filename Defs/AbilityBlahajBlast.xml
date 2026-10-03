@@ -33,6 +33,7 @@
     <defName>OMW_BlahajBlast</defName>
     <label>Blahaj Blast</label>
     <description>Fire a layered beam at a target, dealing 15 damage and opening their minds.</description>
+    <iconPath>UI/Abilities/OMW_SB_BlahajBlast</iconPath>
     <abilityClass>OMWKallaxStorageborn.Ability_BlahajBlast</abilityClass>
     <targetRequired>true</targetRequired>
     <canUseAoeToGetTargets>false</canUseAoeToGetTargets>
