@@ -7,6 +7,9 @@
     <description></description>
     <iconPath>Storageborn/Bodies/Blahaj/Storageborn_south</iconPath>
     <exclusionTags />
+    <abilities>
+      <li>OMW_BlahajBlast</li>
+    </abilities>
     <modExtensions>
       <li Class="StoragebornXenotype.StoragebornBodyCategoryExtension">
         <OMW_StoragebornCategory>OMW_StoragebornCategory_IndustrialIkea</OMW_StoragebornCategory>
