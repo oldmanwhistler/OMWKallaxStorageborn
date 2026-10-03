@@ -12,7 +12,7 @@
 
 	<AbilityDef>
     <defName>OMW_RainMaker</defName>
-    <label>RainMaker</label>
+    <label>Make It Rain</label>
     <description>Summon rain for one day.</description>
     <iconPath>UI/Abilities/OMW_SB_RainMaker</iconPath>
     <abilityClass>OMWKallaxStorageborn.Ability_RainMaker</abilityClass>
