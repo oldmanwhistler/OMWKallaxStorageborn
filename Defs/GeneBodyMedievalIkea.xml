@@ -18,13 +18,19 @@
       </li>
       <li Class="StoragebornXenotype.StoragebornBodyGenesExtension">
         <genes>
+        <li>AptitudeRemarkable_Melee</li>
+        <li>AptitudePoor_Social</li>
+        <li>AptitudePoor_Intellectual</li>                        
         <li>PsychicAbility_Deaf</li>
         <li>Neversleep</li>     
         <li>VU_NoBlood</li>
         <li>FireWeakness</li>
         <li>FireTerror</li>    
-        <li>WoundHealing_Fast</li>        
-        <li>Immunity_Strong</li>             
+        <li>WoundHealing_SuperFast</li>      
+        <li>Immunity_Strong</li>       
+        <li>Beauty_Ugly</li>
+        <li>MeleeDamage_Strong</li>
+        <li>BS_GiantWeaponWielder</li>                      
         <li MayRequire="sarg.alphagenes">AG_WoodLeather</li>
         <li MayRequire="sarg.alphagenes">AG_NoMeat</li>                 
         </genes>
@@ -60,13 +66,17 @@
       </li>
       <li Class="StoragebornXenotype.StoragebornBodyGenesExtension">
         <genes>
-        <li>PsychicAbility_Deaf</li>
+        <li>AptitudeTerrible_Animals</li>
+        <li>AptitudeRemarkable_Intellectual</li>
+        <li>PsychicAbility_Extreme</li>
         <li>Neversleep</li>     
         <li>VU_NoBlood</li>
         <li>FireWeakness</li>
         <li>FireTerror</li>    
         <li>WoundHealing_Fast</li>        
         <li>Immunity_Strong</li>             
+        <li>BS_Very_Passioned_Learning_Gene</li>
+        <li>BS_PerfectMemory</li>
         <li MayRequire="sarg.alphagenes">AG_WoodLeather</li>
         <li MayRequire="sarg.alphagenes">AG_NoMeat</li>                 
         </genes>
@@ -102,13 +112,17 @@
       </li>
       <li Class="StoragebornXenotype.StoragebornBodyGenesExtension">
         <genes>
-        <li>PsychicAbility_Deaf</li>
+        <li>AptitudeTerrible_Construction</li>
+        <li>AptitudeRemarkable_Plants</li>
+        <li>BS_Diet_Herbivore</li>
+        <li>Beauty_VeryUgly</li>
         <li>Neversleep</li>     
         <li>VU_NoBlood</li>
         <li>FireWeakness</li>
         <li>FireTerror</li>    
         <li>WoundHealing_Fast</li>        
         <li>Immunity_Strong</li>             
+        <li MayRequire="sarg.alphagenes">AG_LightSustenance</li>
         <li MayRequire="sarg.alphagenes">AG_WoodLeather</li>
         <li MayRequire="sarg.alphagenes">AG_NoMeat</li>                 
         </genes>
