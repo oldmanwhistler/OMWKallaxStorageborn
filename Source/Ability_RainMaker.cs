@@ -23,8 +23,13 @@ namespace OMWKallaxStorageborn
 
             SoundDefOf.Thunder_OffMap.PlayOneShotOnCamera();
 
+            // Set the map weather immediately; the condition keeps rain forced for the full duration.
+            WeatherDef rain = DefDatabase<WeatherDef>.GetNamed("Rain");
+            pawn.Map.weatherManager.curWeather = rain;
+            pawn.Map.weatherManager.lastWeather = rain;
+
             GameCondition condition = GameConditionMaker.MakeCondition(
-                DefDatabase<GameConditionDef>.GetNamed("OMW_RainMakerCondition"), 60000);
+                DefDatabase<GameConditionDef>.GetNamed("OMW_RainMakerCondition"), 10000);
             pawn.Map.gameConditionManager.RegisterCondition(condition);
             return true;
         }
