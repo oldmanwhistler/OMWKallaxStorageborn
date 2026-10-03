@@ -1,2 +1,4 @@
 /Assemblies
-/Source/obj
+/Source/obj/
+/Source/obj/Debug/
+/Source/obj/Debug/*
