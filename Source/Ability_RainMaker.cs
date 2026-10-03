@@ -1,5 +1,6 @@
 using RimWorld;
 using Verse;
+using Verse.Sound;
 
 namespace OMWKallaxStorageborn
 {
@@ -19,6 +20,8 @@ namespace OMWKallaxStorageborn
             bool activated = base.Activate(target, dest);
             if (!activated || pawn?.Map == null)
                 return activated;
+
+            SoundDefOf.Thunder_OffMap.PlayOneShotOnCamera();
 
             GameCondition condition = GameConditionMaker.MakeCondition(
                 DefDatabase<GameConditionDef>.GetNamed("OMW_RainMakerCondition"), 60000);
