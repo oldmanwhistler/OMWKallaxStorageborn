@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <GameConditionDef>
+    <defName>OMW_RainMakerCondition</defName>
+    <conditionClass>GameCondition_ForceWeather</conditionClass>
+    <label>rain</label>
+    <description>Rain falls from the sky.</description>
+    <weatherDef>Rain</weatherDef>
+    <natural>false</natural>
+    <canBePermanent>false</canBePermanent>
+  </GameConditionDef>
+
+	<AbilityDef>
+    <defName>OMW_RainMaker</defName>
+    <label>RainMaker</label>
+    <description>Summon rain for one day.</description>
+    <abilityClass>OMWKallaxStorageborn.Ability_RainMaker</abilityClass>
+		<targetRequired>False</targetRequired>
+		<canUseAoeToGetTargets>False</canUseAoeToGetTargets>
+		<stunTargetWhileCasting>True</stunTargetWhileCasting>
+		<showPsycastEffects>False</showPsycastEffects>
+		<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<warmupTime>0</warmupTime>
+			<drawAimPie>False</drawAimPie>
+			<requireLineOfSight>False</requireLineOfSight>
+			<targetParams>
+				<canTargetSelf>true</canTargetSelf>
+				<canTargetPawns>false</canTargetPawns>
+				<canTargetBuildings>false</canTargetBuildings>
+				<canTargetAnimals>false</canTargetAnimals>
+				<canTargetHumans>false</canTargetHumans>
+				<canTargetMechs>false</canTargetMechs>
+			</targetParams>
+		</verbProperties>
+	</AbilityDef>  
+</Defs>
