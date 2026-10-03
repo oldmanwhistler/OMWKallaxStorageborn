@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <SoundDef>
+    <defName>OMW_BlahajBlastSound</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Abilities</clipFolderPath>
+          </li>
+        </grains>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <FleckDef>
+    <defName>OMW_BlahajBeamFleck</defName>
+    <fleckSystemClass>FleckSystemStatic</fleckSystemClass>
+    <graphicData>
+      <graphicClass>Graphic_Fleck</graphicClass>
+      <texPath>Effects/BlahajBeam</texPath>
+      <shaderType>Mote</shaderType>
+    </graphicData>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <fadeInTime>0</fadeInTime>
+    <solidTime>0.25</solidTime>
+    <fadeOutTime>0.15</fadeOutTime>
+  </FleckDef>
+
+  <AbilityDef>
+    <defName>OMW_BlahajBlast</defName>
+    <label>Blahaj Blast</label>
+    <description>Fire a layered beam at a target, dealing 15 damage and giving them the Hermaphromorph xenogene if they lack it.</description>
+    <abilityClass>OMWKallaxStorageborn.Ability_BlahajBlast</abilityClass>
+    <targetRequired>true</targetRequired>
+    <canUseAoeToGetTargets>false</canUseAoeToGetTargets>
+    <showPsycastEffects>false</showPsycastEffects>
+    <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>true</disableGizmoWhileUndrafted>
+    <cooldownTicksRange>300</cooldownTicksRange>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <range>100</range >
+      <warmupTime>2</warmupTime>      
+      <drawAimPie>true</drawAimPie>
+      <requireLineOfSight>true</requireLineOfSight>
+      <targetParams>
+        <canTargetSelf>false</canTargetSelf>
+        <canTargetPawns>true</canTargetPawns>
+        <canTargetBuildings>false</canTargetBuildings>
+        <canTargetAnimals>true</canTargetAnimals>
+        <canTargetHumans>true</canTargetHumans>
+        <canTargetMechs>true</canTargetMechs>
+      </targetParams>
+    </verbProperties>
+    <aiCanUse>true</aiCanUse>
+  </AbilityDef>  
+</Defs>

@@ -36,32 +36,4 @@
 			</targetParams>
 		</verbProperties>
 	</AbilityDef>
-
-  <AbilityDef>
-    <defName>OMW_BlahajBlast</defName>
-    <label>Blahaj Blast</label>
-    <description>Fire a layered beam at a target, dealing 15 damage and giving them the Hermaphromorph xenogene if they lack it.</description>
-    <abilityClass>OMWKallaxStorageborn.Ability_BlahajBlast</abilityClass>
-    <targetRequired>true</targetRequired>
-    <canUseAoeToGetTargets>false</canUseAoeToGetTargets>
-    <showPsycastEffects>false</showPsycastEffects>
-    <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
-    <disableGizmoWhileUndrafted>true</disableGizmoWhileUndrafted>
-    <cooldownTicksRange>300</cooldownTicksRange>
-    <verbProperties>
-      <verbClass>Verb_CastAbility</verbClass>
-      <range>100</range >
-      <warmupTime>2</warmupTime>      
-      <drawAimPie>true</drawAimPie>
-      <requireLineOfSight>true</requireLineOfSight>
-      <targetParams>
-        <canTargetSelf>false</canTargetSelf>
-        <canTargetPawns>true</canTargetPawns>
-        <canTargetBuildings>false</canTargetBuildings>
-        <canTargetAnimals>true</canTargetAnimals>
-        <canTargetHumans>true</canTargetHumans>
-        <canTargetMechs>true</canTargetMechs>
-      </targetParams>
-    </verbProperties>
-  </AbilityDef>
 </Defs>
