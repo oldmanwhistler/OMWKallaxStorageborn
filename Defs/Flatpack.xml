@@ -6,13 +6,22 @@
     <reportString>assembling Flatpack.</reportString>
   </JobDef>
 
-  <ThingDef ParentName="ResourceBase">
+  <ThingDef>
     <defName>OMW_SB_Flatpack</defName>
     <label>Flatpack</label>
     <description>A flat-packed furniture body waiting to be assembled.</description>
+    <thingClass>ThingWithComps</thingClass>
+    <category>Item</category>
+    <drawerType>MapMeshOnly</drawerType>
+    <selectable>true</selectable>
+    <useHitPoints>true</useHitPoints>
+    <altitudeLayer>Item</altitudeLayer>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <rotatable>false</rotatable>
+    <pathCost>14</pathCost>
     <graphicData>
       <texPath>Things/Item/OMW_Ikea_Flatpack</texPath>
-      <graphicClass>Graphic_StackCount</graphicClass>
+      <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <statBases>
       <MarketValue>100</MarketValue>
@@ -20,9 +29,6 @@
     </statBases>
     <stackLimit>1</stackLimit>
     <alwaysHaulable>true</alwaysHaulable>
-    <thingCategories>
-      <li>ResourcesRaw</li>
-    </thingCategories>
     <comps Inherit="False">
       <li Class="CompProperties_Forbiddable" />
       <li Class="OMWKallaxStorageborn.CompProperties_Flatpack" />
