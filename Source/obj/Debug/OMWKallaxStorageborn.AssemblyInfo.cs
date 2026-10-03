@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OMWKallaxStorageborn")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8b82db5b668b0f794d2dd9b946adb73ef3752a46")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+83048bd53f3b3c43f649cb776e8b3a2834ff70f0")]
 [assembly: System.Reflection.AssemblyProductAttribute("OMWKallaxStorageborn")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OMWKallaxStorageborn")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
