@@ -3,7 +3,7 @@
   <JobDef>
     <defName>OMW_AssembleFlatpack</defName>
     <driverClass>OMWKallaxStorageborn.JobDriver_AssembleFlatpack</driverClass>
-    <reportString>assembling Flatpack.</reportString>
+    <reportString>assembling flatpack.</reportString>
   </JobDef>
 
   <ThingDef>

@@ -83,8 +83,8 @@ namespace OMWKallaxStorageborn
                     biologicalAgeRange: new FloatRange(18f, 40f), forceRecruitable: true,
                     forceNoGear: true);
                 Pawn newPawn = PawnGenerator.GeneratePawn(request);
-                newPawn.genes.AddGene(genes.RandomElement(), true);
-                GenSpawn.Spawn(newPawn, CellFinder.RandomClosewalkCellNear(spawnCell, map, 2), map);
+                newPawn.genes.AddGene(genes.RandomElement(), false);
+                GenSpawn.Spawn(newPawn, CellFinder.RandomClosewalkCellNear(spawnCell, map, 2), map);                
             });
         }
     }
