@@ -30,6 +30,9 @@ namespace OMWKallaxStorageborn
         private const TargetIndex ItemInd = TargetIndex.B;
         private Mote warmupMote;
         private Effecter anomalyRitualEffecter;
+        private Sustainer anomalyHumanRitualSound;
+        private Sustainer anomalyRitualSound;
+        private int handlingTicks;
         private Corpse Corpse => (Corpse)job.GetTarget(CorpseInd).Thing;
         private Thing Item => job.GetTarget(ItemInd).Thing;
 
@@ -53,17 +56,38 @@ namespace OMWKallaxStorageborn
                 if (usable != null && warmupMote == null && usable.Props.warmupMote != null)
                     warmupMote = MoteMaker.MakeAttachedOverlay(Corpse, usable.Props.warmupMote, Vector3.zero);
                 warmupMote?.Maintain();
-                if (anomalyRitualEffecter == null)
+                bool supportsBlahaj = Corpse.InnerPawn != null && Corpse.InnerPawn.RaceProps.Humanlike && Corpse.InnerPawn.genes != null;
+                if (supportsBlahaj && anomalyRitualEffecter == null)
                 {
                     EffecterDef ritualEffect = DefDatabase<EffecterDef>.GetNamedSilentFail("PsychicRitual_Sustained");
                     if (ritualEffect != null) anomalyRitualEffecter = ritualEffect.Spawn(Corpse, Corpse);
                 }
-                anomalyRitualEffecter?.EffectTick(Corpse, Corpse);
+                if (supportsBlahaj)
+                {
+                    anomalyRitualEffecter?.EffectTick(Corpse, Corpse);
+                    TargetInfo soundTarget = new TargetInfo(Corpse.PositionHeld, Corpse.MapHeld);
+                    SoundDef humanRitualSound = DefDatabase<SoundDef>.GetNamedSilentFail("PsychicRitual_Ongoing_Human");
+                    if (anomalyHumanRitualSound == null && humanRitualSound != null && humanRitualSound.sustain)
+                        anomalyHumanRitualSound = humanRitualSound.TrySpawnSustainer(SoundInfo.InMap(soundTarget, MaintenanceType.PerTick));
+                    anomalyHumanRitualSound?.Maintain();
+                    handlingTicks++;
+                    if (handlingTicks >= 360)
+                    {
+                        SoundDef ritualSound = DefDatabase<SoundDef>.GetNamedSilentFail("PsychicRitual_Ongoing");
+                        if (anomalyRitualSound == null && ritualSound != null && ritualSound.sustain)
+                            anomalyRitualSound = ritualSound.TrySpawnSustainer(SoundInfo.InMap(soundTarget, MaintenanceType.PerTick));
+                        anomalyRitualSound?.Maintain();
+                    }
+                }
             };
             wait.AddFinishAction(() =>
             {
                 anomalyRitualEffecter?.Cleanup();
                 anomalyRitualEffecter = null;
+                anomalyHumanRitualSound?.End();
+                anomalyHumanRitualSound = null;
+                anomalyRitualSound?.End();
+                anomalyRitualSound = null;
             });
             yield return wait;
             yield return Toils_General.Do(Resurrect);
@@ -77,17 +101,19 @@ namespace OMWKallaxStorageborn
             CompTargetEffect_Resurrect comp = Item.TryGetComp<CompTargetEffect_Resurrect>();
             if (ResurrectionUtility.TryResurrect(resurrected))
             {
-                SpawnDessicatedRemains(resurrected, originalPosition, originalMap);
-                GeneDef blahaj = DefDatabase<GeneDef>.GetNamed("OMW_StoragebornBodyIkeaBlahaj");
-                if (resurrected.genes != null && !resurrected.genes.HasGene(blahaj))
+                if (resurrected.RaceProps.Humanlike && resurrected.genes != null)
                 {
-                    // remove storageborn genes to trigger the body type to blahaj
-                    foreach (Gene gene in resurrected.genes.GenesListForReading)
+                    SpawnDessicatedRemains(resurrected, originalPosition, originalMap);
+                    GeneDef blahaj = DefDatabase<GeneDef>.GetNamed("OMW_StoragebornBodyIkeaBlahaj");
+                    if (!resurrected.genes.HasGene(blahaj))
                     {
-                        if (gene.def.defName.Contains("OMW_StorageBody"))
-                            resurrected.genes?.RemoveGene(gene);
+                        // Remove any prior Storageborn body gene before assigning the Blåhaj body.
+                        List<Gene> genesToRemove = new List<Gene>();
+                        foreach (Gene gene in resurrected.genes.GenesListForReading)
+                            if (gene.def.defName.Contains("OMW_StorageBody")) genesToRemove.Add(gene);
+                        foreach (Gene gene in genesToRemove) resurrected.genes.RemoveGene(gene);
+                        resurrected.genes.AddGene(blahaj, false);
                     }
-                    resurrected.genes.AddGene(blahaj, false);
                 }
 
                 SoundDefOf.MechSerumUsed.PlayOneShot(SoundInfo.InMap(resurrected));
