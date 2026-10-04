@@ -130,6 +130,7 @@ namespace OMWKallaxStorageborn
             // Match the Corrupted Obelisk procedure so the remains retain the original pawn's full identity and genes.
             Pawn remains = Find.PawnDuplicator.Duplicate(originalPawn);
             remains.forceNoDeathNotification = true;
+            remains.wasLeftBehindStartingPawn = true;
             GenSpawn.Spawn(remains, position, map);
             remains.Kill(null);
             Corpse remainsCorpse = remains.Corpse;
