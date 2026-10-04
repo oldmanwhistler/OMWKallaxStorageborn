@@ -103,6 +103,11 @@ namespace OMWKallaxStorageborn
             {
                 if (resurrected.RaceProps.Humanlike && resurrected.genes != null)
                 {
+                    Faction recruiterFaction = pawn?.Faction ?? Faction.OfPlayer;
+                    if (recruiterFaction != null) resurrected.SetFaction(recruiterFaction, null);
+                    if (resurrected.ideo != null && recruiterFaction != null && recruiterFaction.ideos != null && recruiterFaction.ideos.PrimaryIdeo != null)
+                        resurrected.ideo.SetIdeo(recruiterFaction.ideos.PrimaryIdeo);
+
                     SpawnDessicatedRemains(resurrected, originalPosition, originalMap);
                     GeneDef blahaj = DefDatabase<GeneDef>.GetNamed("OMW_StoragebornBodyIkeaBlahaj");
                     if (!resurrected.genes.HasGene(blahaj))

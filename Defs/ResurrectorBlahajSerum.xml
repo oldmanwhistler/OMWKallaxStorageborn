@@ -12,8 +12,8 @@
     <label>blahaj resurrector plushie</label>
     <description>A one-use plushie that resurrects a corpse without the usual brain damage. The revived pawn inhabits the Blåhaj plushie. Outcomes are better when it is used on a fresher body.</description>
     <graphicData>
-      <texPath>Storageborn/Bodies/Blahaj/Storageborn_east</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Item/BlahajResurrector</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <stackLimit>10</stackLimit>
     <statBases>
