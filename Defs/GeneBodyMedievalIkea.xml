@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-  <GeneDef ParentName="OMW_StorageBodyBase">
+  <GeneDef ParentName="OMW_StorageBodyIkeaBase">
     <defName>OMW_StoragebornBodyIkeaKallax</defName>
     <label>SB Kallax</label>
     <labelShortAdj>Kallax</labelShortAdj>
@@ -50,7 +50,7 @@
     </modExtensions>
   </GeneDef>
 
-    <GeneDef ParentName="OMW_StorageBodyBase">
+    <GeneDef ParentName="OMW_StorageBodyIkeaBase">
     <defName>OMW_StoragebornBodyIkeaBilly</defName>
     <label>SB Billy</label>
     <labelShortAdj>Billy</labelShortAdj>
@@ -98,7 +98,7 @@
     </modExtensions>
   </GeneDef>
 
-  <GeneDef ParentName="OMW_StorageBodyBase">
+  <GeneDef ParentName="OMW_StorageBodyIkeaBase">
     <defName>OMW_StoragebornBodyIkeaLack</defName>
     <label>SB Lack</label>
     <labelShortAdj>Lack</labelShortAdj>

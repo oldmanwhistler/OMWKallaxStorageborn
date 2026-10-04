@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-  <GeneDef ParentName="OMW_StorageBodyBase">
+  <GeneDef ParentName="OMW_StorageBodyIkeaBase">
     <defName>OMW_StoragebornBodyIkeaBlahaj</defName>
     <label>SB Blahaj</label>
     <labelShortAdj>Blahaj</labelShortAdj>
@@ -54,7 +54,7 @@
     </modExtensions>
   </GeneDef>
 
-    <GeneDef ParentName="OMW_StorageBodyBase">
+    <GeneDef ParentName="OMW_StorageBodyIkeaBase">
     <defName>OMW_StoragebornBodyIkeaFrakta</defName>
     <label>SB Frakta</label>
     <labelShortAdj>Frakta</labelShortAdj>
@@ -95,7 +95,7 @@
     </modExtensions>
   </GeneDef>
 
-  <GeneDef ParentName="OMW_StorageBodyBase">
+  <GeneDef ParentName="OMW_StorageBodyIkeaBase">
     <defName>OMW_StoragebornBodyIkeaFraktaRainbow</defName>
     <label>SB FraktaRainbow</label>
     <labelShortAdj>FraktaRainbow</labelShortAdj>

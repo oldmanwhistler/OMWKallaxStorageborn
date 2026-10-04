@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <RulePackDef>
+    <defName>OMW_KallaxStorageborn_Swedish_Female</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>name->[SwedishNameFemale] [SwedishNameLast]</li>
+      </rulesStrings>
+      <rulesFiles>
+        <li>SwedishNameFemale-&gt;Names/Swedish/First_Female</li>
+        <li>SwedishNameLast-&gt;Names/Swedish/Last</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>OMW_KallaxStorageborn_Swedish_Male</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>name-&gt;[SwedishNameMale] [SwedishNameLast]</li>
+      </rulesStrings>
+      <rulesFiles>
+        <li>SwedishNameMale-&gt;Names/Swedish/First_Male</li>
+        <li>SwedishNameLast-&gt;Names/Swedish/Last</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+</Defs>

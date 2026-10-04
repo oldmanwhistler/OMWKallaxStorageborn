@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <GeneDef ParentName="OMW_StorageBodyBase" Name="OMW_StorageBodyIkeaBase" Abstract="True">
+  <modExtensions>
+      <li Class="StoragebornXenotype.StoragebornBodyNameRulesExtension">
+        <nameRules>
+          <li>OMW_KallaxStorageborn_Swedish_Male</li>
+          <li>OMW_KallaxStorageborn_Swedish_Female</li>
+        </nameRules>
+      </li>  
+  </modExtensions>
+  </GeneDef>
+</Defs>
