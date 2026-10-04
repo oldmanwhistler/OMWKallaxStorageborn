@@ -12,14 +12,14 @@
     <defName>OMW_BlahajAwakening</defName>
     <label>Blahaj Awakening</label>
     <description>Sacrifice a humanlike pawn to awaken the power of Blåhaj. A poor-quality ritual may leave the invoker comatose.</description>
-    <outcomeDescription>One pawn is sacrificed and a Resurrector Blåhaj Serum is created. The invoker's coma duration depends on ritual quality.</outcomeDescription>
+    <outcomeDescription>One pawn is sacrificed and a Resurrector Blåhaj plushie is created. The invoker's coma duration depends on ritual quality.</outcomeDescription>
     <researchPrerequisite>BasicPsychicRituals</researchPrerequisite>
     <hoursUntilOutcome>2</hoursUntilOutcome>
     <cooldownHours>120</cooldownHours>
     <targetRole>OMW_BlahajAwakeningVictim</targetRole>
     <chanterRole>Chanter</chanterRole>
     <requiredOffering>
-      <filter><thingDefs><li>Shard</li></thingDefs></filter>
+      <filter><thingDefs><li>OMW_BlahajPlushApparel</li></thingDefs></filter>
       <count>1</count>
     </requiredOffering>
     <iconPath>UI/PsychicRituals/PsychicRitual_VoidProvocation</iconPath>
