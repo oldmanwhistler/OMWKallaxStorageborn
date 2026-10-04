@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <PsychicRitualRoleDef MayRequire="Ludeon.RimWorld.Anomaly,oldmanwhistler.BlahajPlush">
+    <defName>OMW_BlahajAwakeningVictim</defName>
+    <label>sacrifice</label>
+    <allowedCount>1</allowedCount>
+    <allowedConditions>Default, Downed, Prisoner, Sleeping</allowedConditions>
+    <applyPowerOffset>false</applyPowerOffset>
+    <removeOnLost>false</removeOnLost>
+  </PsychicRitualRoleDef>
+  <OMWKallaxStorageborn.PsychicRitualDef_BlahajAwakening MayRequire="Ludeon.RimWorld.Anomaly,oldmanwhistler.BlahajPlush">
+    <defName>OMW_BlahajAwakening</defName>
+    <label>Blahaj Awakening</label>
+    <description>Sacrifice a humanlike pawn to awaken the power of Blåhaj. A poor-quality ritual may leave the invoker comatose.</description>
+    <outcomeDescription>One pawn is sacrificed and a Resurrector Blåhaj Serum is created. The invoker's coma duration depends on ritual quality.</outcomeDescription>
+    <researchPrerequisite>BasicPsychicRituals</researchPrerequisite>
+    <hoursUntilOutcome>2</hoursUntilOutcome>
+    <cooldownHours>120</cooldownHours>
+    <targetRole>OMW_BlahajAwakeningVictim</targetRole>
+    <chanterRole>Chanter</chanterRole>
+    <requiredOffering>
+      <filter><thingDefs><li>Shard</li></thingDefs></filter>
+      <count>1</count>
+    </requiredOffering>
+    <iconPath>UI/PsychicRituals/PsychicRitual_VoidProvocation</iconPath>
+    <comaHoursFromQualityCurve>
+      <points><li>(0, 8)</li><li>(1, 0)</li></points>
+    </comaHoursFromQualityCurve>
+  </OMWKallaxStorageborn.PsychicRitualDef_BlahajAwakening>
+</Defs>
