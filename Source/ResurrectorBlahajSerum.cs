@@ -72,9 +72,12 @@ namespace OMWKallaxStorageborn
         private void Resurrect()
         {
             Pawn resurrected = Corpse.InnerPawn;
+            IntVec3 originalPosition = Corpse.PositionHeld;
+            Map originalMap = Corpse.MapHeld;
             CompTargetEffect_Resurrect comp = Item.TryGetComp<CompTargetEffect_Resurrect>();
             if (ResurrectionUtility.TryResurrect(resurrected))
             {
+                SpawnDessicatedRemains(resurrected, originalPosition, originalMap);
                 GeneDef blahaj = DefDatabase<GeneDef>.GetNamed("OMW_StoragebornBodyIkeaBlahaj");
                 if (resurrected.genes != null && !resurrected.genes.HasGene(blahaj))
                 {
@@ -93,6 +96,19 @@ namespace OMWKallaxStorageborn
                 if (comp.Props.addsHediff != null) resurrected.health.AddHediff(comp.Props.addsHediff);
             }
             Item.SplitOff(1).Destroy();
+        }
+
+        private static void SpawnDessicatedRemains(Pawn originalPawn, IntVec3 position, Map map)
+        {
+            if (map == null || !position.IsValid) return;
+            // Match the Corrupted Obelisk procedure so the remains retain the original pawn's full identity and genes.
+            Pawn remains = Find.PawnDuplicator.Duplicate(originalPawn);
+            remains.forceNoDeathNotification = true;
+            GenSpawn.Spawn(remains, position, map);
+            remains.Kill(null);
+            Corpse remainsCorpse = remains.Corpse;
+            CompRottable rottable = remainsCorpse?.GetComp<CompRottable>();
+            if (rottable != null) rottable.RotProgress = rottable.PropsRot.TicksToDessicated + 1f;
         }
     }
 }
