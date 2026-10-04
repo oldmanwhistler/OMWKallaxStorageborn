@@ -15,5 +15,6 @@
   </modDependencies>
   <loadAfter>
     <li>oldmanwhistler.omwstoragebornxenotype</li>
+    <li>oldmanwhistler.BlahajPlush</li>
   </loadAfter>
 </ModMetaData>
