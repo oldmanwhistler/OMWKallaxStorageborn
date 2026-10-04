@@ -29,6 +29,7 @@ namespace OMWKallaxStorageborn
         private const TargetIndex CorpseInd = TargetIndex.A;
         private const TargetIndex ItemInd = TargetIndex.B;
         private Mote warmupMote;
+        private Effecter anomalyRitualEffecter;
         private Corpse Corpse => (Corpse)job.GetTarget(CorpseInd).Thing;
         private Thing Item => job.GetTarget(ItemInd).Thing;
 
@@ -52,7 +53,18 @@ namespace OMWKallaxStorageborn
                 if (usable != null && warmupMote == null && usable.Props.warmupMote != null)
                     warmupMote = MoteMaker.MakeAttachedOverlay(Corpse, usable.Props.warmupMote, Vector3.zero);
                 warmupMote?.Maintain();
+                if (anomalyRitualEffecter == null)
+                {
+                    EffecterDef ritualEffect = DefDatabase<EffecterDef>.GetNamedSilentFail("PsychicRitual_Sustained");
+                    if (ritualEffect != null) anomalyRitualEffecter = ritualEffect.Spawn(Corpse, Corpse);
+                }
+                anomalyRitualEffecter?.EffectTick(Corpse, Corpse);
             };
+            wait.AddFinishAction(() =>
+            {
+                anomalyRitualEffecter?.Cleanup();
+                anomalyRitualEffecter = null;
+            });
             yield return wait;
             yield return Toils_General.Do(Resurrect);
         }
