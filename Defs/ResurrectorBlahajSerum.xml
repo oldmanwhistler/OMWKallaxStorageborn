@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <JobDef>
+    <defName>OMW_ResurrectBlahaj</defName>
+    <driverClass>OMWKallaxStorageborn.JobDriver_ResurrectBlahaj</driverClass>
+    <reportString>resurrecting TargetA.</reportString>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  </JobDef>
+
+  <ThingDef ParentName="MechSerumBase">
+    <defName>OMW_ResurrectorBlahajSerum</defName>
+    <label>blahaj resurrector plushie</label>
+    <description>A one-use plushie that resurrects a corpse without the usual brain damage. The revived pawn inhabits the Blåhaj plushie. Outcomes are better when it is used on a fresher body.</description>
+    <graphicData>
+      <texPath>Storageborn/Bodies/Blahaj/Storageborn_east</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>10</stackLimit>
+    <statBases>
+      <MarketValue>1700</MarketValue>
+    </statBases>
+    <thingCategories>
+      <li>Drugs</li>
+    </thingCategories>
+    <tradeability>Sellable</tradeability>
+    <thingSetMakerTags>
+      <li>RewardStandardMidFreq</li>
+    </thingSetMakerTags>
+    <comps>
+      <li Class="CompProperties_Usable">
+        <useJob>UseItem</useJob>
+        <useLabel>Use {0_label}</useLabel>
+        <useDuration>0</useDuration>
+        <warmupMote>Mote_ResurrectAbility</warmupMote>
+        <showUseGizmo>true</showUseGizmo>
+      </li>
+      <li Class="CompProperties_Targetable">
+        <compClass>CompTargetable_SingleCorpse</compClass>
+        <fleshCorpsesOnly>true</fleshCorpsesOnly>
+        <nonDessicatedCorpsesOnly>true</nonDessicatedCorpsesOnly>
+      </li>
+      <li Class="OMWKallaxStorageborn.CompProperties_TargetEffectResurrectBlahaj">
+        <moteDef>Mote_ResurrectFlash</moteDef>
+        <withSideEffects>false</withSideEffects>
+      </li>
+    </comps>
+  </ThingDef>
+</Defs>
