@@ -7,6 +7,9 @@
     <description></description>
     <iconPath>Storageborn/Bodies/Kallax/Storageborn_south</iconPath>
     <exclusionTags />
+    <abilities>
+      <li>OMW_StubToe</li>
+    </abilities>    
     <modExtensions>
       <li Class="StoragebornXenotype.StoragebornBodyCategoryExtension">
         <OMW_StoragebornCategory>OMW_StoragebornCategory_MedievalIkea</OMW_StoragebornCategory>
@@ -57,6 +60,9 @@
     <description></description>
     <iconPath>Storageborn/Bodies/Billy/Storageborn_south</iconPath>
     <exclusionTags />
+    <abilities>
+      <li>OMW_StubToe</li>
+    </abilities>    
     <modExtensions>
       <li Class="StoragebornXenotype.StoragebornBodyCategoryExtension">
         <OMW_StoragebornCategory>OMW_StoragebornCategory_MedievalIkea</OMW_StoragebornCategory>
@@ -105,6 +111,9 @@
     <description></description>
     <iconPath>Storageborn/Bodies/Lack/Storageborn_south</iconPath>
     <exclusionTags />
+    <abilities>
+      <li>OMW_StubToe</li>
+    </abilities>    
     <modExtensions>
       <li Class="StoragebornXenotype.StoragebornBodyCategoryExtension">
         <OMW_StoragebornCategory>OMW_StoragebornCategory_MedievalIkea</OMW_StoragebornCategory>

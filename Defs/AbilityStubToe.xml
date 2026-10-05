@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <HediffDef>
+    <defName>OMW_StubToePain</defName>
+    <label>stubbed toe</label>
+    <description>Every step hurts more than it should.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <isBad>true</isBad>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>3000</disappearsAfterTicks>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <painOffset>0.2</painOffset>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <AbilityDef>
+    <defName>OMW_StubToe</defName>
+    <label>Stub Toe</label>
+    <description>Strike an enemy in melee, making them feel 50% more pain for 10 seconds.</description>
+    <iconPath>UI/Abilities/StubToe</iconPath>
+    <targetRequired>true</targetRequired>
+    <cooldownTicksRange>300</cooldownTicksRange>    
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <range>1.5</range>
+      <warmupTime>0.5</warmupTime>
+      <requireLineOfSight>true</requireLineOfSight>
+      <targetParams>
+        <canTargetSelf>false</canTargetSelf>
+        <canTargetPawns>true</canTargetPawns>
+        <canTargetBuildings>false</canTargetBuildings>
+        <canTargetAnimals>true</canTargetAnimals>
+        <canTargetHumans>true</canTargetHumans>
+        <canTargetMechs>true</canTargetMechs>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="OMWKallaxStorageborn.CompProperties_AbilityStubToe">
+        <hediffDef>OMW_StubToePain</hediffDef>
+      </li>
+    </comps>
+    <aiCanUse>true</aiCanUse>
+  </AbilityDef>
+</Defs>
